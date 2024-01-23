@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.appsnipp.profiledesigns.ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                style="@style/headerText"
+                android:text="Account Info"
+                android:layout_marginBottom="20dp"/>
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/nameImageView"
+                    android:src="@drawable/ic_name"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:text="Name"
+                    android:layout_toRightOf="@id/nameImageView"
+                style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:text="developer"
+                    android:layout_toRightOf="@id/nameImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/mobileImageView"
+                    android:src="@drawable/ic_mobile"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Mobile"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    style="@style/profileDetailsTextMain"/>
+
+                <TextView
+                    android:text="+91-8129999999"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    android:src="@drawable/ic_email"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Email"
+                    android:layout_toRightOf="@id/emailImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:text="developer@appsnipp.com"
+                    android:layout_toRightOf="@id/emailImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/addressImageView"
+                    android:src="@drawable/ic_address"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Address"
+                    android:layout_toRightOf="@id/addressImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:text="Avenue 2nd Street NW SY."
+                    android:layout_toRightOf="@id/addressImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/dobImageView"
+                    android:src="@drawable/ic_dob"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="D.O.B"
+                    android:layout_toRightOf="@id/dobImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:text="12-05-1990"
+                    android:layout_toRightOf="@id/dobImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+        </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
